@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item android:id="@+id/check_notification_status"
+            android:titleCondensed="Persist"
+            android:title="@string/enable_notifications"
+            android:checkable="true"
+            app:showAsAction="withText"
+            app:actionViewClass="android.widget.CheckBox"
+            android:checkableBehavior="single"/>
+    </group>
+
+</menu>

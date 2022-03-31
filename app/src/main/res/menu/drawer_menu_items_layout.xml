@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    tools:showIn="navigation_view">-->
+        <group android:checkableBehavior="single" android:visible="true">
+            <item android:id="@+id/nav_change_user_data" android:icon="@drawable/user" android:title="@string/change_user_data"/>
+            <item android:id="@+id/nav_create_new_user" android:icon="@drawable/users" android:title="@string/new_user"/>
+            <item android:id="@+id/nav_admin_users" android:icon="@drawable/admin_users"  android:title="@string/admin_users"/>
+            <item android:id="@+id/nav_new_order" android:icon="@drawable/new_order"  android:title="@string/new_order"/>
+            <item android:id="@+id/nav_read_order" android:icon="@drawable/read_order" android:title="@string/see_last_order" />
+            <item android:id="@+id/nav_admin_orders" android:icon="@drawable/new_orders" android:title="@string/admin_orders"/>
+            <item android:id="@+id/nav_admin_products" android:icon="@drawable/admin_products" android:title="@string/admin_products"/>
+            <item android:id="@+id/nav_basket" android:icon="@drawable/basket" android:title="@string/basket"/>
+            <item android:id="@+id/nav_login_logout" android:icon="@drawable/login_logout" android:title="@string/logout"/>
+        </group>
+</menu>

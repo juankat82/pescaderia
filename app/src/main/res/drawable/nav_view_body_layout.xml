@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" android:thickness="5dp">
+            <solid android:color="@color/splashBackground"/>
+            <gradient android:startColor="@color/splashBackground" android:endColor="@color/nav_view_body_color" android:angle="90"/>
+            <stroke android:color="@color/black" android:width="3dp"/>
+        </shape>
+        <ripple android:color="@color/splashBackground" android:radius="30dp"/>
+    </item>
+</selector>

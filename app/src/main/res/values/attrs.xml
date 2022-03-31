@@ -1,0 +1,4 @@
+<resources>
+    <attr name="enabledMenuIconColor" format="reference|color"/>
+    <attr name="disabledMenuIconColor" format="reference|color"/>
+</resources>

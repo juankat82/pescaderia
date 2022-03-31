@@ -1,0 +1,16 @@
+-Database requires to create and configure an account in https://restdb.io/
+-You need to install java11
+-credentials.json: You need your own credentials
+-local.properties: Change line sdk.dir=/home/your_user_name/Android/Sdk with your own user name.
+-In your app's gradle.build file, replace line "applicationId "com.juan.pescaderia" with your own app's name
+-Jar files contained in apps/lib are required (itll will be used for sending emails)
+-You need to configure an email account and enable "access to less secure apps" from the SECURITY tab. Soon this will be disallowed by google and an alternate way to do this has to configured (firebase?)
+-In app/src/androidTest/java/com/juan/pescaderia/fragments: en chechUserExists, User(...) must exist on your database to check against (check estructure with your data class User to know more)
+-app/src/main/java/com/juan/pescaderia/services/EmailService replace ".." on line private const val toEmailAddress:String = ".." with your working email address
+-app/src/main/java/com/juan/pescaderiadatabaseupdater/RemoteDatabaseUploadReceiver.kt add your phone number to receive warnings about getting new orders. Line: private const val PHONE_NUMBER = "ADD YOUR NUMBER" (eg: +4412123456 includes + and country code).
+-app/src/main/java/com/juan/pescaderia/retrofit/QueryService: add your own database's base address (BASE_URL)
+-app/src/main/java/com/juan/pescaderia/retrofit/RetroInterface: add your own databse API key
+-in app/src/main/java/com/juan/pescaderia/sharedpreferencesconfig/SharedPreferences add getCompanyEmail() = "your_company_email" 
+-app/src/main/java/com/juan/pescaderia/viewmodel/ViewModel is barely used. Its easy to configure the app for its usage but some code must be added. Doesnt work properly atm.
+-app/src/main/java/com/juan/pescaderia/fragment/EmptyFragment requires you to write your own email address (adminEmail) and your company ID (spanish format only which is C-11111111 where "1" could be any number, this is configurable but its well integrated in the app and its matched against a regular expression pattern CIF_REGEX located in app/src/main/java/com/juan/pescaderia/fragment/UserRegistrationFragment and will be tested again upon login or any time credentials are needed)
+-Same is required for LoginFragment

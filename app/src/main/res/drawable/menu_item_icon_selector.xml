@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:color="?enabledMenuIconColor" android:state_enabled="true" />
+        <item android:color="?disabledMenuIconColor" />
+<!--        <item android:state_activated="true" android:drawable="@drawable/ic_baseline_notifications"/>-->
+<!--        <item android:state_activated="false" android:drawable="@drawable/ic_baseline_notifications_off_24"/>-->
+</selector>
